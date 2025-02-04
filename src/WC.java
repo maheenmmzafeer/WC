@@ -9,7 +9,7 @@ public class WC {
 
     public int countLines(String fileName) {
         int linesCount = 0;
-        try (Scanner scanner = new Scanner(new File(fileName))) {
+        try (Scanner scanner = new Scanner(new File(fileName), "UTF-8")) {
             while (scanner.hasNextLine()) {
                 scanner.nextLine();
                 linesCount++;
@@ -56,7 +56,7 @@ public class WC {
 
     public int countWords(String fileName) {
         int wordCount = 0;
-        try (Scanner scanner = new Scanner(new File(fileName))) {
+        try (Scanner scanner = new Scanner(new File(fileName), "UTF-8")) {
             while (scanner.hasNext()) {
                 // Read each word
                 scanner.next();
