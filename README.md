@@ -15,6 +15,16 @@ This is a simple command-line word count utility in Java, similar to the Unix `w
 - Java
 - JUnit 4
 
+## Project Structure
+
+```text
+src/
+├── Main.java
+├── WC.java
+└── Test/
+    └── WCTest.java
+```
+
 ## Usage
 
 Compile the program using:
@@ -37,16 +47,6 @@ java Main [options] <file>
 - `-b` : Count bytes
 
 If no options are provided, all counts (lines, words, characters, and bytes) are displayed.
-
-## Project Structure
-
-```text
-src/
-├── Main.java
-├── WC.java
-└── Test/
-    └── WCTest.java
-```
 
 ### Example
 
